@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edyen · Lagrange 103 — Comunicado de mudanza</title>
+  <style>
+    :root{
+      --bg:#f6f9ff; --card:#ffffff; --ink:#0f172a; --muted:#5b6b8c;
+      --brand:#0b66ff; --accent:#2dd45e; --outline:#e7edfb;
+      --shadow: 0 10px 28px rgba(16,24,40,.08), 0 2px 8px rgba(16,24,40,.06);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--ink); background:linear-gradient(180deg, var(--bg), #fff 60%);
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin-inline:auto; padding:24px}
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(1.2) blur(8px);
+      background:rgba(246,249,255,.85); border-bottom:1px solid var(--outline);
+    }
+    .bar{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; font-size:20px}
+    .logo{width:34px; height:34px; border-radius:10px;
+      background: conic-gradient(from 225deg,#0b66ff 0 33%, #37c871 0 66%, #ff7a1a 0 100%);
+      box-shadow: inset 0 0 0 3px #fff, 0 4px 10px rgba(0,0,0,.08);
+    }
+    nav{display:flex; gap:10px; flex-wrap:wrap}
+    .pill{padding:10px 14px; border-radius:999px; border:1px solid var(--outline); background:#fff; color:#2a3b57}
+    .pill.active{background:#eaf2ff; border-color:transparent}
+
+    /* Hero */
+    .hero{display:grid; gap:22px; padding:28px 0 8px}
+    h1{
+      font-size:62px; line-height:1.02; margin:0; letter-spacing:-0.02em;
+      background:linear-gradient(90deg, var(--brand), #1c89ff 45%, var(--accent) 100%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .sub{font-size:20px; color:var(--muted); max-width:820px}
+
+    /* Buttons */
+    .ctas{display:flex; gap:14px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:14px 20px; border-radius:999px;
+      border:1px solid var(--outline); background:#fff; font-weight:600; box-shadow: var(--shadow);
+      transition:.2s transform ease, .2s box-shadow ease;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .btn.primary{background:var(--brand); color:#fff; border-color:transparent}
+    .btn.success{background:var(--accent); color:#053914; border-color:transparent}
+
+    /* Cards / Sections */
+    section.card{
+      background:var(--card); border:1px solid var(--outline); border-radius:var(--radius);
+      box-shadow: var(--shadow); padding:28px; margin-top:22px
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px;
+      background:#eaf2ff; border:1px solid var(--outline); color:#2b3a55;
+      font-weight:700; font-size:12px; letter-spacing:.08em; text-transform:uppercase
+    }
+    h2{font-size:28px; margin:14px 0 10px}
+    p{margin:10px 0; color:#1f2a44}
+
+    /* Numbered list */
+    .list{display:grid; gap:14px; counter-reset: step}
+    .item{
+      background:#fff; border:1px solid var(--outline); border-radius:16px;
+      padding:18px 18px 18px 58px; position:relative
+    }
+    .item::before{
+      counter-increment: step; content: counter(step);
+      position:absolute; left:16px; top:18px; width:28px; height:28px; border-radius:10px;
+      display:grid; place-items:center; font-weight:800; color:#fff;
+      background:linear-gradient(180deg, var(--brand), #1a79ff);
+      box-shadow:0 6px 14px rgba(11,102,255,.25)
+    }
+    .item strong{display:block; font-size:18px; margin-bottom:4px}
+
+    /* Footer + back to top */
+    footer{margin:40px 0 60px; color:var(--muted); font-size:14px}
+    .toTop{
+      position:fixed; right:22px; bottom:22px; border-radius:999px; padding:12px 14px;
+      background:#fff; border:1px solid var(--outline); box-shadow: var(--shadow)
+    }
+
+    /* Responsive */
+    @media (max-width: 720px){
+      h1{font-size:40px}
+      .sub{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container bar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>edyen <span style="font-weight:600; color:#3a69ff">Lagrange 103</span></span>
+      </div>
+      <nav>
+        <a href="#intro" class="pill active">Introducción</a>
+        <a href="#mensaje" class="pill">Comunicado</a>
+        <a href="#detalles" class="pill">Instrucciones</a>
+        <a href="#contacto" class="pill">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="hero">
+      <h1>Introducción</h1>
+      <p class="sub">
+        El 1º de septiembre realizamos la mudanza a nuestras nuevas oficinas en José Luis Lagrange 103.
+        Este sitio complementa el instructivo que ya recibiste, resolviendo dudas con indicaciones claras y positivas.
+      </p>
+      <div class="ctas">
+        <a class="btn primary" href="#mensaje">Leer comunicado</a>
+        <a class="btn" href="https://maps.app.goo.gl/xFkN5M5uGwuzXVCf6" target="_blank" rel="noopener">Ver ubicación</a>
+        <a class="btn success" href="#detalles">Instrucciones Día 1</a>
+      </div>
+    </section>
+
+    <section id="mensaje" class="card">
+      <span class="kicker">Comunicado</span>
+      <h2>Contexto adicional para la mudanza</h2>
+      <p><strong>Estimado equipo:</strong> Como saben, el próximo 1º de septiembre realizaremos la mudanza a nuestras nuevas oficinas en José Luis Lagrange 103.
+        Ya recibieron el instructivo con las indicaciones principales, y ahora queremos complementar esa información atendiendo a algunas dudas que han surgido.
+        Este mensaje no sustituye lo que ya leyeron, sino que lo enriquece con detalles prácticos para que la experiencia sea más clara y positiva.
+      </p>
+    </section>
+
+    <section id="detalles" class="card">
+      <span class="kicker">Instrucciones Día 1</span>
+      <div class="list" aria-label="Indicaciones principales">
+        <div class="item">
+          <strong>1) Mudanza con flexibilidad</strong>
+          <p>El lunes sí estaremos mudándonos, pero queremos que lo vivan con un enfoque de adaptación.
+            La prioridad es reconocer el espacio, ubicarnos y empezar a organizarnos poco a poco, sin necesidad de trasladar todo de inmediato.</p>
+        </div>
+        <div class="item">
+          <strong>2) Qué llevar</strong>
+          <p>No es necesario que traigan todas sus cosas en esta primera etapa. Primero recorran el espacio y visualicen cómo organizarse.
+            Pueden traer su laptop para trabajar, ya que será un día con mucha actividad y arranques operativos.</p>
+        </div>
+        <div class="item">
+          <strong>3) Traslado de archivos</strong>
+          <p>Estamos buscando autorización para disponer de una camioneta el viernes siguiente. En caso de aprobarse, únicamente se podrán trasladar archivos requeridos (📦 sin mobiliario).
+            Cada interesado deberá empaquetar y subir su propio archivo en San Esteban y recibirlo en Lagrange 103. En cuanto tengamos la confirmación lo comunicaremos.</p>
+        </div>
+        <div class="item">
+          <strong>4) Guardias en San Esteban</strong>
+          <p>En caso de que sea necesario dejar guardias en San Esteban, por favor asegúrense de que esas acciones se lleven a cabo, ya que no podemos descuidar en ningún momento la operación.
+            Ese debe seguir siendo el núcleo de nuestra atención.</p>
+        </div>
+        <div class="item">
+          <strong>5) Semana de ajustes</strong>
+          <p>Durante la primera semana habrá muchos pendientes y ajustes: accesos, señalética, limpieza fina, configuraciones.
+            Les pedimos comprensión y paciencia en esta etapa de transición.</p>
+        </div>
+        <div class="item">
+          <strong>6) Actitud</strong>
+          <p>Este cambio es un paso clave en nuestra evolución hacia la Visión 2030.
+            Los invitamos a vivirlo con entusiasmo, colaboración y apertura.</p>
+        </div>
+        <div class="item">
+          <strong>Mensaje final</strong>
+          <p>Gracias a todos por su compromiso y buena disposición. ¡Hagamos de esta etapa una experiencia positiva y motivadora para todos!</p>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; margin-top:20px; flex-wrap:wrap">
+        <a class="btn" href="#contacto">Dudas y contacto</a>
+        <a class="btn" href="#intro">Volver al inicio</a>
+      </div>
+    </section>
+
+    <section id="contacto" class="card">
+      <span class="kicker">Contacto</span>
+      <h2>¿Dudas?</h2>
+      <p>Si tienes preguntas, por favor comunícate con Eric Barrera (de preferencia antes del 1 de septiembre) para brindarte la atención que mereces.</p>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:eric.barrera@edyen.com">Escribir a Eric</a>
+        <a class="btn" href="#detalles">Revisar instrucciones</a>
+      </div>
+    </section>
+
+    <footer class="container">
+      <p>© 2025 Edyen · Lagrange 103 — Hecho con cuidado para un arranque sin fricciones.</p>
+    </footer>
+  </main>
+
+  <a class="toTop" href="#intro" aria-label="Volver arriba">⬆ Volver arriba</a>
+</body>
+</html>
